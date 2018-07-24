@@ -1,10 +1,9 @@
 # SQL Database with Key Vault
 
-<a href="https%3A%2F%2Fraw.githubusercontent.com%2FMaximeBlaise%2FWiki%2Fmaster%2FAzure%2FArm%2Fsqldatabase-with-keyvault%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximeBlaise%2FSamples%2Fmaster%2FAzure%2FArm%2Fsqldb-save-in-keyvault%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMaximeBlaise%2FWiki%2Fmaster%2FAzure%2FArm%2Fsqldatabase-with-keyvault%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMaximeBlaise%2FSamples%2Fmaster%2FAzure%2FArm%2Fsqldb-save-in-keyvault%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 

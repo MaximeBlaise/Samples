@@ -109,7 +109,7 @@
       "apiVersion": "2016-10-01",
       "location": "westeurope",
       "tags": {
-        "displayName": "declicKeyVault"
+        "displayName": "keyvault"
       },
       "scale": null,
       "properties": {
@@ -124,6 +124,22 @@
         "enabledForTemplateDeployment": false
       },
       "dependsOn": []
+    },
+    {
+      "type": "Microsoft.KeyVault/vaults/secrets",
+      "name": "[concat(parameters('keyvaultName'),'/',parameters('sqldatabaseName'),'ConnectionString')]",
+      "apiVersion": "2015-06-01",
+      "tags": {
+        "displayName": "keyvault secret"
+      },
+      "properties": {
+        "contentType": "text/plain",
+        "value": "[variables('sqlDBConnectionString')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers/databases', parameters('sqlserverName'), parameters('sqldatabaseName'))]",
+        "[resourceId('Microsoft.KeyVault/vaults', parameters('keyvaultName'))]"
+      ]
     }
   ],
   "outputs": {}
